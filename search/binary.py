@@ -10,7 +10,6 @@ def find(e, a):
         return None
 
     i = len(a)/2
-    print i, a
 
     if e == a[i]:
         return i
