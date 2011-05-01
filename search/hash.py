@@ -5,8 +5,10 @@
 def build_hash(a):
     return dict([(v,i) for i,v in enumerate(a)])
 
-def find(e, h):
+def find(e, a):
     ''' Returns position or None'''
+
+    h = build_hash(a)
 
     if h.has_key(e):
         return h[e]
@@ -14,6 +16,5 @@ def find(e, h):
     return None
 
 if __name__ == '__main__':
-    h = build_hash([3,5,0,10,2,8,1])
-    print find(1, h)
-    print find(9, h)
+    print find(1, [0,1,2,3,4,5])
+    print find(9, [0,1,2,3,4,5])
