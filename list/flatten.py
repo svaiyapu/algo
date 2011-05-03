@@ -12,7 +12,7 @@ def flatten(a, stack=[]):
     return stack
 
 def flatten2(a):
-    ''' In place '''
+    ''' In place, using slice assignment '''
     i = 0
     while i < len(a):
         while isinstance(a[i], list):
