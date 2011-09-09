@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 def lss(a):
-    '''Returns longest sum sub sequence'''
+    '''Returns longest sum sub sequence, relies on tuple sorting (max function)'''
     if not a:
         return a
     # (sum, length, start, end)
